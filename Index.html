@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <style>
+    div 
+    {
+     width: 600px;
+     border: 15px solid rgb(107, 12, 0);
+     padding: 50px;
+     margin: 20px;
+    }
+
+
+    table 
+    {
+     font-family: arial, sans-serif;
+     border-collapse: collapse;
+     width: 100%;
+    }
+
+    td, th
+    {
+     border: 1px solid #580000;
+     text-align: left;
+     padding: 8px;
+    }
+
+    tr:nth-child(even) 
+    {
+     background-color: #969696;
+    }
+
+
+    .flex-container {
+    display: flex;
+    width: auto;
+    background-color: aqua;
+    justify-content: flex-start
+    }
+    
+    .flex-container > div {
+    background-color: beige;
+    margin: 20px;
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+    }
+
+
+    .grid-container {
+    display: grid;
+    grid-template-columns:auto auto;
+    background-color: #580000;
+    padding: 10px;
+    }
+
+    .grid-items {
+    background-color: #969696;
+    border: 2px solid rgba(red, green, blue, alpha);
+    padding: 10 px;
+    font-size:medium;
+    text-align: center;
+    }
+    
+   </style>
+
+
+
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show's Database</title>
+
+</head>
+
+
+<main>
+    <header>
+        <h1>Shows Reviews</h1>
+        <p>In all life we can say there's always something good out of bad stuff</p>
+        <p>Like a diamond on the rough, except there was only sand in this desert of bad shows</p>
+    </header>
+    <p>Welcome to the database of shows of what I have seen over my life, as a reminder that most shows I have seen are indeed bad</p>
+    <p>Of course there's more than bad shows, everything will be associated with it's added mini review for further guidance.</p>
+</main>
+
+<body>
+    <div class = "flex-container">
+        <div>What I watched</div>
+        <div>What I expected</div>
+        <div>What I thought</div>
+
+
+    </div>
+
+
+    <h1>A</h1>
+    <h3>Akame ga Kill</h3>
+    <img src="https://m.media-amazon.com/images/M/MV5BZjU2ZDZkYmMtYTA3Yi00NTZkLTgzYjgtOTRhMTFiOWFkODZmXkEyXkFqcGdeQXVyNjkyODc3NjQ@._V1_.jpg"
+    width="300"height="500" alt="Akame">
+    <div>Story of killers, managed to deviate from the plot in such an spectacular fashion I couldn't believe it could even be possible</div>
+    <table>
+        <tr>
+            <th>Story</th>
+            <th>2/5</th>       
+        </tr>
+
+        <tr>
+            <th>Genre</th>
+            <th>Action</th>
+        </tr>
+
+
+
+
+    </table>
+
+    <div class = "grid-container">
+        <div class = "grid-items">Akame ga Kill</div>
+        <div class = "grid-items">Story of killers, managed to deviate from the plot in such an spectacular <br/> fashion I couldn't believe it could even be possible</div>
+        <div class = "grid-items">Story</div>
+        <div class = "grid-items">2/5</div>
+        <div class = "grid-items">Genre</div>
+        <div class = "grid-items">Action</div>
+
+
+    </div>
+
+
+
+
+    <p>This is not gonna be the definitive entry at all, I do want to make the page presentable but is a matter of time constrains today
+    </p>
+    <a href="Home.html">Go Back</a>
+
+
+
+</body>
+</html>

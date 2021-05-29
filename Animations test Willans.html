@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <style>
+        .slideshow-contained{
+            max-width: fit-content;
+            position: relative;
+            margin: auto;
+        }
+
+        @keyframes fade {
+        from {opacity: .5}
+        to {opacity: 1}            
+        }
+    </style>
+
+
+
+
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick Animation Test</title>
+</head>
+
+
+
+<body>
+    <div class = "slideshow-contained">
+    <div class = "Quick Slideshow">
+
+            <div class = "actual slide">
+                <img src ="https://files.catbox.moe/ec3955.png" alt="">
+            </div>
+
+            <div class = "actual slide">
+                <img src ="https://files.catbox.moe/6sycph.png" alt="">
+            </div>
+
+            <div class = "actual slide">
+                <img src ="https://files.catbox.moe/z19qj9.png" alt="">
+            </div>
+
+            <div class = "actual slide">
+                <img src ="https://files.catbox.moe/2o6src.png" alt="">
+            </div>
+        
+        </div>
+    </div>
+</div>
+
+<div style="text-align:center">
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span>
+    <span class="dot"></span>  
+</div>
+
+<script>
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides(){
+
+    var i;
+    var slides = document.getElementsByClassName("actual slide");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+
+
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 4000); 
+
+}
+</script>
+
+</body>
+</html>
