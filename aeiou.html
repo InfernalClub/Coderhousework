@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>New Index</title>
+
+</head>
+
+
+<main>
+    <header>
+
+
+
+        <h1>The compendium necronomikon</h1>
+        <p>This multiple purpose site exist as a repository for all related media to my projects, as a blog <br>
+        Direct links to all my related made media from my game programin will be delivered here, with a live database of shows.<br>
+        While not the original idea has yet to be implemented, I decided to put some ideas to test</p>
+
+        <ul>
+            <li>Show's Database</li>
+            <li>Projects</li>
+            <li>VN's Database</li>
+            
+
+        </ul>
+
+
+        <div class = "slideshow-contained">
+            <div class = "Quick Slideshow">
+        
+                    <div class = "actual slide">
+                        <img src ="https://files.catbox.moe/ec3955.png" alt="">
+                    </div>
+        
+                    <div class = "actual slide">
+                        <img src ="https://files.catbox.moe/6sycph.png" alt="">
+                    </div>
+        
+                    <div class = "actual slide">
+                        <img src ="https://files.catbox.moe/z19qj9.png" alt="">
+                    </div>
+        
+                    <div class = "actual slide">
+                        <img src ="https://files.catbox.moe/2o6src.png" alt="">
+                    </div>
+                
+                </div>
+            </div>
+        </div>
+        
+        <div style="text-align:center">
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span>
+            <span class="dot"></span>  
+        </div>
+        
+        <script>
+            var slideIndex = 0;
+            showSlides();
+        
+            function showSlides(){
+        
+            var i;
+            var slides = document.getElementsByClassName("actual slide");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+        
+        
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+        
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 4000); 
+        
+        }
+        </script>
+                
+
+    </header> 
+</main>
+
+<body>
+
+    <div class="directs">
+        <span class = "directs__img"></span>
+        <div class="directs__contents">
+            <ul class = "directs__info">
+                <li class ="directs__item direct__item--activate">Bullet Hell</li>
+                <li class ="directs__item">Photoshop</li class ="directs__item">
+                <li class ="directs__item">Aseprite</li class ="directs__item">
+                <li class ="directs__item">Blender</li class ="directs__item">
+            </ul>
+            
+
+
+
+
+        </div>
+    </div>
+
+    <h3>Projects</h3>
+    <p>Similar to the creation of this webpage, this adds another aspect to the "current" blog like process, to be updated as I work on it</p>
+    <p>Further information <a href = "Projects.html">here</a> </p>
+
+    <h3>VN's Database</h3>
+    <p>Stories are told in different mediums, my objective with this section is to invite the readers to try some of them, vaslty unique stories</p>
+    <p><b>*STILL IN PROGRESS DUE TO THE NATURE OF THE CONTENT NOT SUITABLE FOR ACADEMIC WORK*</b></p>
+
+    <p>For contact information and comments <a href ="Disclaimer.html"> check here</a></p>
+    
+</body>
+</html>
