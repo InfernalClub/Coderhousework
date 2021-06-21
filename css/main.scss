@@ -51,8 +51,8 @@
 
     &__item{
         color:black;
-        padding: .4em .6em;
-        margin-right: .6em;
+        padding: .4em;
+        margin-right: auto;
         background: white;
         border-radius: .2em;
         font-size: .90em;
@@ -69,22 +69,22 @@
 body {
     background: $primary-color;
     color: $text-color;
-    font-weight: map-get($font-weights, regular);
-    width: 80%;
+    width: 70%;
     margin: 0 auto;
-    line-height: $line-height;
+    
 }
 
 
 main {
-    @include flexing(column);
-    width: 90%;
-    margin: 0 auto;
 
+    width: 100%;
+    margin: 0 auto;
+    
     #{&}__paragraph{
     font-weight: weight(bold);
-
     }
+   }
+
 ul{
     color: rgb(255, 102, 0);
     
@@ -108,5 +108,4 @@ table {
         max-width: fit-content;
         position: relative;
         margin: auto;
-}
 }
