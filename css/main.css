@@ -36,8 +36,8 @@
 
 .directs__item {
   color: black;
-  padding: .4em .6em;
-  margin-right: .6em;
+  padding: .4em;
+  margin-right: auto;
   background: white;
   border-radius: .2em;
   font-size: .90em;
@@ -51,27 +51,12 @@
 body {
   background: #3f3f3f;
   color: white;
-  font-weight: 400;
-  width: 80%;
+  width: 70%;
   margin: 0 auto;
-  line-height: 1.5;
 }
 
 main {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -79,23 +64,23 @@ main main__paragraph {
   font-weight: 800;
 }
 
-main ul {
+ul {
   color: #ff6600;
 }
 
-main h1, main h2, main h3, main h4, main h5, main h6 {
+h1, h2, h3, h4, h5, h6 {
   line-height: 30px;
   margin-top: 20px;
   margin-bottom: 10px;
 }
 
-main table {
+table {
   font-family: 'Times New Roman', Times, serif;
   border-collapse: collapse;
   width: 100%;
 }
 
-main .slideshow-contained {
+.slideshow-contained {
   text-align: center;
   max-width: -webkit-fit-content;
   max-width: -moz-fit-content;
