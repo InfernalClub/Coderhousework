@@ -1,0 +1,17 @@
+@import url(c:\Users\Kamit\Documents\Projects\Programing\Bimbimwahoo\bootstrap\css\bootstrap-grid.css);
+.custom1 {
+  background-color: indigo;
+  color: white;
+  font-size: 14px;
+  line-height: 1.357;
+  text-align: center;
+  padding: 10px;
+  padding-bottom: 20px;
+}
+
+.custompics {
+  float: right;
+  width: 200px;
+  height: 120px;
+}
+/*# sourceMappingURL=custom.css.map */
